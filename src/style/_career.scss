@@ -1,0 +1,107 @@
+.career {
+  overflow-x: hidden;
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  @include lg {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+		&__content {
+      margin-bottom: 40px;
+
+      @include md {
+        display: grid;
+        grid-template-columns: 1fr min-content;
+        justify-content: space-between;
+        gap: 11px 21px;
+        grid-template-areas: 
+        'title link'
+        'description .';
+      }
+
+      @include lg {
+        gap: 27px 31px;
+        margin-bottom: 50px;
+      }
+
+      @include xl {
+        grid-template-columns: 690px min-content;
+      }
+		}
+
+		&__title {
+      font-weight: 1000;
+      font-size: 32px;
+      line-height: 1;
+      text-transform: uppercase;
+      color: $second;
+      margin-bottom: 24px;
+
+      @include md {
+        grid-area: title;
+        margin-bottom: 0;
+      }
+
+      @include lg {
+        font-size: 52px;
+      }
+		}
+
+		&__description {
+      margin-bottom: 24px;
+
+      @include md {
+        grid-area: description;
+        margin-bottom: 0;
+      }
+		}
+
+		&__link {
+
+      @include md {
+        grid-area: link;
+      }
+		}
+
+		&__slider {
+      overflow: visible;
+		}
+
+		&__image-list {
+		}
+
+		&__image-item {
+      height: unset;
+      display: flex;
+      align-items: center;
+
+      @include md {
+        &:nth-child(odd) {
+          width: 34%;
+        }
+
+        &:nth-child(even) {
+          width: 25%;
+        }
+      }
+
+      @include xl {
+        &:nth-child(odd) {
+          width: 27%;
+        }
+
+        &:nth-child(even) {
+          width: 20%;
+        }
+      }
+		}
+
+		&__image-wrapper {
+		}
+
+		&__image {
+      border-radius: 16px;
+		}
+}

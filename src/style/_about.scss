@@ -1,0 +1,147 @@
+.about {
+  padding: 80px 0;
+
+  @include lg {
+    padding: 100px 0;
+  }
+
+		&__container {
+      @include lg {
+        display: grid;
+        grid-template-columns: minmax(460px, 48%) 1fr;
+        gap: 40px 20px;
+        grid-template-areas: 
+        'title title'
+        'slider content';
+      }
+
+      @include xl {
+        gap: 40px 30px;
+        grid-template-rows: min-content 1fr;
+        grid-template-areas: 
+        'slider title'
+        'slider content';
+      }
+		}
+
+		&__title {
+      font-weight: 1000;
+      font-size: 32px;
+      line-height: 1;
+      text-transform: uppercase;
+      color: $second;
+      margin-bottom: 24px;
+
+      @include lg {
+        font-size: 52px;
+        grid-area: title;
+        margin-bottom: 0;
+      }
+		}
+
+		&__content {
+      margin-bottom: 13px;
+      background-image: url('../img/paw.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      padding-bottom: 27px;
+
+      @include md {
+        display: grid;
+        grid-template-columns: 1fr min-content;
+        grid-template-areas: 
+        'description list'
+        'link list';
+        gap: 24px 92px;
+        background-position: right bottom;
+      }
+      @include lg {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content;
+        gap: 40px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        grid-area: content;
+        grid-template-areas: 
+        'description'
+        'list'
+        'link';
+        background-position: center;
+      }
+
+      @include xl {
+        gap: 60px;
+      }
+		}
+
+		&__description {
+      margin-bottom: 40px;
+
+      @include md {
+        grid-area: description;
+        margin-bottom: 0;
+      }
+		}
+
+		&__link {
+      margin-bottom: 40px;
+
+      @include md {
+        grid-area: link;
+        margin-bottom: 0;
+        justify-self: start;
+      }
+
+      @include lg {
+        align-self: end;
+      }
+		}
+
+		&__count-list {
+      display: grid;
+      grid-template-columns: repeat(2, 120px);
+      gap: 20px;
+      font-weight: 1000;
+      line-height: 1;
+      color: $second;
+
+      @include md {
+        grid-area: list;
+      }
+
+      @include lg {
+        grid-template-columns: repeat(2, 200px);
+      }
+		}
+
+		&__count {
+      font-size: 40px;
+      margin-bottom: 16px;
+
+      @include lg {
+        font-size: 52px;
+      }
+      
+		}
+
+		&__count-desc {
+		}
+
+		&__picture {
+      @include lg {
+        grid-area: slider;
+      }
+		}
+
+		&__slider {
+      
+		}
+
+		&__image-list {
+		}
+
+		&__image {
+      border-radius: 16px;
+		}
+  }

@@ -1,0 +1,80 @@
+.footer {
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+		&__container {
+
+      @include sm {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: 1fr max-content;
+      }
+
+       @include lg {
+        gap: 72px;
+      }
+		}
+
+		&__logo {
+      width: 200px;
+      margin-bottom: 32px;
+
+      @include sm {
+        margin-bottom: 0;
+      }
+      
+      @include lg {
+        width: 360px;
+      }
+		}
+
+		&__social-list {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 52px;
+
+      @include sm {
+        margin-bottom: 0;
+      }
+
+      @include lg {
+        gap: 36px;
+      }
+		}
+
+		&__social-item {
+      
+		}
+
+		&__social-link {
+      display: block;
+      width: 36px;
+
+      @include lg {
+        width: 50px;
+      }
+		}
+
+		&__developers {
+      margin-bottom: 52px;
+      line-height: 1;
+
+      @include sm {
+        order: 2;
+        margin-bottom: 0;
+      }
+		}
+
+		&__developer {
+      margin-bottom: 19px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+		}
+
+		&__copyright {
+		}
+}
+.container {
+}

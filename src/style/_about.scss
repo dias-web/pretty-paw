@@ -73,6 +73,11 @@
       @include xl {
         gap: 60px;
       }
+
+      @include xxl {
+        min-height: 550px;
+        height: min-content;
+      }
 		}
 
 		&__description {
@@ -124,21 +129,11 @@
       }
       
 		}
-
-		&__count-desc {
-		}
-
+		
 		&__picture {
       @include lg {
         grid-area: slider;
       }
-		}
-
-		&__slider {
-      
-		}
-
-		&__image-list {
 		}
 
 		&__image {

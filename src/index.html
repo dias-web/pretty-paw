@@ -46,7 +46,7 @@
         <h1 class="hero__title">Зоосад</h1>
         <p class="hero__subtitle">С&nbsp;заботой о&nbsp;животных</p>
       </div>
-      <video class="hero__video-bg video-bg" loading="lazy" autoplay loop muted></video>
+      <video class="hero__video-bg video-bg" autoplay loop muted playsinline></video>
     </section>
 
     <section class="about">
@@ -130,27 +130,28 @@
       <h2 class="visually-hidden">Локации зоопарка</h2>
 
       <ul class="location__list">
-        <li class="location__item">
+        <li class="location__item location__item_mammals">
           <h3 class="location__title">Млекопитающие</h3>
           <p class="location__description">В&nbsp;эту группу входят животные, которые питаются молоком в&nbsp;раннем возрасте и&nbsp;обладают механизмом регуляции телевой температуры. В&nbsp;нашем зоосаде можно увидеть млекопитающих, таких как львы, тигры, слоны и&nbsp;обезьяны.</p>
         </li>
-        <li class="location__item">
+        <li class="location__item location__item_birds">
           <h3 class="location__title">Птицы</h3>
           <p class="location__description">Эта группа включает в&nbsp;себя разнообразных пернатых обитателей зоопарка, от&nbsp;маленьких певчих птиц до&nbsp;больших драпированных птиц хищников. В&nbsp;нашем зоосаде можно увидеть таких птиц, как фламинго, аисты, орлы и&nbsp;павлины.</p>
         </li>
-        <li class="location__item">
+        <li class="location__item location__item_reptiles">
           <h3 class="location__title">Рептилии</h3>
           <p class="location__description">В&nbsp;эту группу входят животные, которые имеют чешуйчатую кожу и&nbsp;обладают приспособлениями для жизни на&nbsp;суше или в&nbsp;воде. В&nbsp;нашем зоосаде можно увидеть таких рептилий, как крокодилы, змеи, черепахи и&nbsp;ящерицы.</p>
         </li>
-        <li class="location__item">
-          <h3 class="location__title">Водный мир</h3>
+        <li class="location__item location__item_water">
+          <h3 class="location__title">Водный&nbsp;мир</h3>
           <p class="location__description">В&nbsp;эту группу входят животные, которые живут в&nbsp;воде или зависят от&nbsp;воды для выживания. В&nbsp;нашем зоосаде можно увидеть разнообразных рыб, дельфинов, китов, акул и&nbsp;других водных животных.</p>
         </li>
-        <li class="location__item">
+        <li class="location__item location__item_insects">
           <h3 class="location__title">Насекомые</h3>
           <p class="location__description">В&nbsp;эту группу входят разнообразные насекомые, такие как бабочки, жуки, муравьи и&nbsp;пчелы. В&nbsp;нашем зоосаде можно увидеть различных беспозвоночных и&nbsp;насекомых.</p>
         </li>
       </ul>
+      <video class="location__video-bg video-bg" autoplay loop muted playsinline></video>
     </section>
     <section class="career">
       <div class="container career__container">
@@ -167,48 +168,64 @@
           <ul class="career__image-list swiper-wrapper">
             <li class="career__image-item swiper-slide">
               <picture class="career__image-wrapper">
+                <source srcset="img/parrots2_xxl.webp" type="image/webp" media="(min-width: 1440px)">
+                <source srcset="img/parrots2_xxl.jpg" media="(min-width: 1440px)">
                 <source srcset="img/parrots2.webp" type="image/webp">
                 <img class="career__image" src="img/parrots2.jpg" alt="Попугаи" loading="lazy">
               </picture>
             </li>
             <li class="career__image-item swiper-slide">
               <picture class="career__image-wrapper">
+                <source srcset="img/giraffe2_xxl.webp" type="image/webp" media="(min-width: 1440px)">
+                <source srcset="img/giraffe2_xxl.jpg" media="(min-width: 1440px)">
                 <source srcset="img/giraffe2.webp" type="image/webp">
                 <img class="career__image" src="img/giraffe2.jpg" alt="Жираф" loading="lazy">
               </picture>
             </li>
             <li class="career__image-item swiper-slide">
               <picture class="career__image-wrapper">
+                <source srcset="img/giraffes_xxl.webp" type="image/webp" media="(min-width: 1440px)">
+                <source srcset="img/giraffes_xxl.jpg" media="(min-width: 1440px)">
                 <source srcset="img/giraffes.webp" type="image/webp">
                 <img class="career__image" src="img/giraffes.jpg" alt="Жирафы" loading="lazy">
               </picture>
             </li>
             <li class="career__image-item swiper-slide">
               <picture class="career__image-wrapper">
+                <source srcset="img/leo2_xxl.webp" type="image/webp" media="(min-width: 1440px)">
+                <source srcset="img/leo2_xxl.jpg" media="(min-width: 1440px)">
                 <source srcset="img/leo2.webp" type="image/webp">
                 <img class="career__image" src="img/leo2.jpg" alt="Львы" loading="lazy">
               </picture>
             </li>
             <li class="career__image-item swiper-slide">
               <picture class="career__image-wrapper">
+                <source srcset="img/meerkat_xxl.webp" type="image/webp" media="(min-width: 1440px)">
+                <source srcset="img/meerkat_xxl.jpg" media="(min-width: 1440px)">
                 <source srcset="img/meerkat.webp" type="image/webp">
                 <img class="career__image" src="img/meerkat.jpg" alt="Сурикаты" loading="lazy">
               </picture>
             </li>
             <li class="career__image-item swiper-slide">
               <picture class="career__image-wrapper">
+                <source srcset="img/flamingos_xxl.webp" type="image/webp" media="(min-width: 1440px)">
+                <source srcset="img/flamingos_xxl.jpg" media="(min-width: 1440px)">
                 <source srcset="img/flamingos.webp" type="image/webp">
                 <img class="career__image" src="img/flamingos.jpg" alt="Фламинго" loading="lazy">
               </picture>
             </li>
             <li class="career__image-item swiper-slide">
               <picture class="career__image-wrapper">
+                <source srcset="img/zebra_xxl.webp" type="image/webp" media="(min-width: 1440px)">
+                <source srcset="img/zebra_xxl.jpg" media="(min-width: 1440px)">
                 <source srcset="img/zebra.webp" type="image/webp">
                 <img class="career__image" src="img/zebra.jpg" alt="Зебра" loading="lazy">
               </picture>
             </li>
              <li class="career__image-item swiper-slide">
               <picture class="career__image-wrapper">
+                <source srcset="img/elephant_xxl.webp" type="image/webp" media="(min-width: 1440px)">
+                <source srcset="img/elephant_xxl.jpg" media="(min-width: 1440px)">
                 <source srcset="img/elephant.webp" type="image/webp">
                 <img class="career__image" src="img/elephant.jpg" alt="Слон" loading="lazy">
               </picture>

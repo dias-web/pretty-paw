@@ -66,7 +66,9 @@
 		}
 
 		&__slider {
-      overflow: visible;
+      @include md {
+        overflow: visible;
+      }
 		}
 
 		&__image-list {
@@ -77,22 +79,26 @@
       display: flex;
       align-items: center;
 
+      @include sm {
+        width: 48%;
+      }
+
       @include md {
-        &:nth-child(odd) {
+        &_odd {
           width: 34%;
         }
 
-        &:nth-child(even) {
+        &_even {
           width: 25%;
         }
       }
 
       @include xl {
-        &:nth-child(odd) {
+        &_odd {
           width: 27%;
         }
 
-        &:nth-child(even) {
+        &_even {
           width: 20%;
         }
       }

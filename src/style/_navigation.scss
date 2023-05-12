@@ -2,12 +2,87 @@
 
 		&__list {
       display: none;
+			position: absolute;
+			overflow-y: auto;
+			background-color: $main;
+			color: $second;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			z-index: -1;
+			padding-top: 120px;
+			padding-bottom: 120px;
+			text-align: center;
+
+			@include lg {
+				padding-top: 146px;
+				padding-bottom: 146px;
+			}
+
+			@include xl {
+				position: static;
+				display: flex;
+				align-items: center;
+				gap: 8px;
+				height: auto;
+				padding: 0;
+			}
 		}
 
 		&__item {
+			margin-bottom: 40px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			@include xl {
+				margin-bottom: 0;
+			}
 		}
 
 		&__link {
+			font-weight: 1000;
+			line-height: 1;
+			font-size: 16px;
+			white-space: nowrap;
+			outline: 2px solid transparent;
+			outline-offset: 5px;
+			padding: 0 5px;
+
+			&:focus:not(:hover) {
+				outline-color: $back;
+			}
+
+			&_active {
+				color: $back;
+				pointer-events: none;
+			}
+
+			@include md {
+				&:hover {
+					color: $back;
+				}
+			}
+
+			@include xl {
+				display: block;
+				padding: 16px 30px;
+				border: 2px solid $back;
+				border-radius: 80px;
+				outline: none;
+
+				&:focus:not(:hover) {
+					background-color: $back;
+				}
+
+				&_active {
+				color: inherit;
+				pointer-events: none;
+				background-color: $back;
+				}
+			}
 		}
 
 		&__button {
@@ -19,6 +94,10 @@
 			@include lg {
 				width: 50px;
       	height: 50px;
+			}
+
+			@include xl {
+				display: none;
 			}
 
 

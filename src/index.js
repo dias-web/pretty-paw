@@ -1,4 +1,5 @@
 import "./index.html";
+import "./page.html";
 
 import "swiper/scss";
 import "swiper/scss/pagination";
@@ -8,10 +9,14 @@ import { slidersInit } from "./modules/sliders";
 import { videoBackgroundInit } from "./modules/videoBackground";
 import { menuControl } from "./modules/menuControl";
 import { locationHover } from "./modules/locationHover";
+import { initScrollTopButton } from "./modules/scrollTopButton";
 
 videoBackgroundInit();
 menuControl();
 locationHover();
+initScrollTopButton("arrow-top", {
+  hover: false,
+});
 
 slidersInit(".about__slider", {
   pagination: {

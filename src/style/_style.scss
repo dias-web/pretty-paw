@@ -154,6 +154,35 @@ iframe {
   }
 }
 
+.arrow-top {
+  width: 36px;
+  height: 36px;
+  right: 16px;
+  bottom: 30px;
+
+  @include sm {
+    right: 30px;
+  }
+
+  @include lg {
+    width: 50px;
+    height: 50px;
+    bottom: 100px;
+  }
+
+  &:hover {
+    color: $back;
+  }
+
+  &__svg {
+    width: 12px;
+
+    @include lg {
+    width: 16px;
+  }
+  }
+}
+
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;

@@ -50,6 +50,9 @@ export const menuControl = () => {
       navigationItems.forEach((elem, i) => {
         const x = i % 2 ? 500 : -500;
         gsap.set(elem, { opacity: 0, x, duration: 1 });
+        if (navigationButton.classList.contains("navigation__button_active")) {
+          tl.restart();
+        }
       });
     }
   };

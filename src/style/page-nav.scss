@@ -1,0 +1,35 @@
+.page-nav {
+  display: none;
+
+  @include lg {
+    display: block;
+    position: fixed;
+    top: 216px;
+    left: 30px;
+  }
+
+		&__list {
+      display: flex;
+      flex-direction: column;
+		}
+
+		&__item {
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+		}
+
+		&__link {
+      font-weight: 1000;
+      font-size: 16px;
+      line-height: 1;
+      color: $second;
+
+      &_active {
+        color: $main;
+        pointer-events: none;
+      }
+		}
+}

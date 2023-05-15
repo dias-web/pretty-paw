@@ -1,6 +1,6 @@
 # Сайт для зоопарка
 
-http://www.seven-rivers.kz/pretty-paw/
+https://www.seven-rivers.kz/pretty-paw/
 
 Для установки пакетов используйте команду npm install
 

@@ -1,7 +1,6 @@
-# WEBPACK
+# Сайт для зоопарка
 
-ссылка на youtube
-https://youtu.be/o8KMucDpSno
+http://www.seven-rivers.kz/pretty-paw/
 
 Для установки пакетов используйте команду npm install
 

@@ -24,12 +24,9 @@ export const menuControl = () => {
   };
 
   const closeMenu = () => {
+    navigationButton.classList.remove("navigation__button_active");
     tl.reverse();
   };
-
-  tl.eventCallback("onReverseComplete", () => {
-    navigationButton.classList.remove("navigation__button_active");
-  });
 
   navigationButton.addEventListener("click", () => {
     if (navigationButton.classList.contains("navigation__button_active")) {
@@ -56,7 +53,14 @@ export const menuControl = () => {
       });
     }
   };
+
   const mediaQuery = window.matchMedia("(min-width: 1240px)");
   mediaQuery.addEventListener("change", checkScreenSize);
   checkScreenSize(mediaQuery);
+
+  navigationList.addEventListener("click", ({ target }) => {
+    if (target.closest(".navigation__link") && !mediaQuery.matches) {
+      closeMenu();
+    }
+  });
 };
